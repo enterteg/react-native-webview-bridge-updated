@@ -54,8 +54,9 @@ class WebViewBridge extends React.Component {
     onBridgeMessage: PropTypes.func,
   }
 
-  getInitialState = () => {
-    return {
+  constructor() {
+    super()
+    this.state = {
       viewState: WebViewBridgeState.IDLE,
       lastErrorEvent: null,
       startInLoadingState: true,
