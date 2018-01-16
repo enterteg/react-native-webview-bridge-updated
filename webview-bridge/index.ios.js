@@ -269,7 +269,7 @@ class WebViewBridge extends React.Component {
     });
     this.updateNavigationState(event);
   }
-});
+}
 
 var RCTWebViewBridge = requireNativeComponent('RCTWebViewBridge', WebViewBridge, {
   nativeOnly: {
