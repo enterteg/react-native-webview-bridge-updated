@@ -81,7 +81,7 @@ var defaultRenderError = (errorDomain, errorCode, errorDesc) => (
  * Renders a native WebView.
  */
 class WebViewBridge extends React.Component {
-  propTypes = {
+  static propTypes = {
     /**
      * Will be called once the message is being sent from webview
      */
@@ -98,7 +98,7 @@ class WebViewBridge extends React.Component {
     super()
     this.state = {
       viewState: WebViewBridgeState.IDLE,
-      lastErrorEvent: (null: ?ErrorEvent),
+      lastErrorEvent: null,
       startInLoadingState: true,
     }
   }

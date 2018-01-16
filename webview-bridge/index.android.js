@@ -47,7 +47,7 @@ var RCTWebViewBridge = requireNativeComponent('RCTWebViewBridge', WebViewBridge)
  * Renders a native WebView.
  */
 class WebViewBridge extends React.Component {
-  propTypes = {
+  static propTypes = {
     /**
      * Will be called once the message is being sent from webview
      */
